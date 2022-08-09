@@ -225,6 +225,30 @@ Garages = {
         vehicle = 'car',              --car, air, sea
         job = "cartel"
     },
+    ["ottos"] = {
+        label = "Otto's Autos Staff Parking",
+        takeVehicle = vector3(838.15, -807.61, 26.37),
+        spawnPoint = vector4(841.55, -814.12, 26.32, 357.21),
+        putVehicle = vector3(845.31, -821.93, 26.33),
+        showBlip = false,
+        blipName = "Otto's Autos Staff Parking",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "ottos"
+    },
+    ["kraken"] = {
+        label = "Kraken Performance Staff Parking",
+        takeVehicle = vector3(149.73, -3005.0, 7.03),
+        spawnPoint = vector4(143.88, -3003.64, 7.03, 354.49),
+        putVehicle = vector3(130.33, -3001.4, 7.03),
+        showBlip = false,
+        blipName = "Kraken Performance Staff Parking",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "tuner"
+    },
     ["police"] = {
         label = "Police",
         takeVehicle = vector3(454.6, -1017.4, 28.4),
