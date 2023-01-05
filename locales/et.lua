@@ -47,15 +47,18 @@ local Translations = {
         impound = "Politsei poolt arestitud",
     },
     info = {
-        car_e = "E - Garaaz",
-        sea_e = "E - Paadimaja",
-        air_e = "E - Angaar",
-        park_e = "E - Hoiusta sõiduk",
+        car_e = "[E] Garaaz",
+        sea_e = "[E] Paadimaja",
+        air_e = "[E] Angaar",
+        park_e = "[E] Hoiusta sõiduk",
         house_garage = "Majagaraaz",
     }
 }
 
-Lang = Locale:new({
-    phrases = Translations,
-    warnOnMissing = true
-})
+if GetConvar('qb_locale', 'en') == 'et' then
+    Lang = Locale:new({
+        phrases = Translations,
+        warnOnMissing = true,
+        fallbackLang = Lang,
+    })
+end
